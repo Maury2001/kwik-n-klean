@@ -1,13 +1,13 @@
 "use client";
 
-import { Facebook, GoogleMaps, InstagramIcon, TwitterIcon } from "./icons";
+import { Facebook, GoogleMaps, InstagramIcon, TwitterIcon, WhatsApp } from "./icons";
 import { motion } from "framer-motion";
 import Footer from "./footer";
 
 export default function Location() {
   return (
-    <section className="flex flex-col justify-between mt-6 bg-[#3CAEF7] text-white">
-      <div className=" flex justify-end sm:justify-center w-full  ">
+    <section className="flex flex-col justify-evenly mt-6 bg-[#3CAEF7] text-white">
+      <div className=" flex justify-center sm:justify-center w-full  ">
         <div className="w-1/2 sm:w-full flex flex-col justify-center">
           <div className=" w-full flex justify-center">
             <div className=" w-1/2 sm:w-full h-1/2 p-4 m-4 mt-6 grid justify-center items-center text-center  border shadow-lg">
@@ -30,21 +30,24 @@ export default function Location() {
               </div>
             </div>
           </div>
-          <div className=" flex flex-wrap justify-center p-4 m-6 gap-4 backdrop-blur-xl rounded-2xl">
-            <motion.a
+          <div className=" flex flex-wrap w-full justify-center p-4 m-6 gap-4 backdrop-blur-xl rounded-2xl">
+        <div className=" flex w-1/3 bg-[#F05F0A] p-4 justify-center rounded-2xl">
+          
+        <motion.a
               href="/"
               target={"_blank"}
               whileHover={{ y: -2 }}
-              className="w-6 h-6 ml-6 sm:mx-1"
+              className="w-6 h-6 m-4 sm:mx-1"
               whileTap={{ scale: 0.9 }}
             >
               <TwitterIcon />
             </motion.a>
+            
             <motion.a
               href="/"
               target={"_blank"}
               whileHover={{ y: -2 }}
-              className="w-6 h-6 ml-6 sm:mx-1"
+              className="w-6 h-6 m-4 sm:mx-1"
               whileTap={{ scale: 0.9 }}
             >
               <Facebook />
@@ -53,15 +56,19 @@ export default function Location() {
               href="/"
               target={"_blank"}
               whileHover={{ y: -2 }}
-              className="w-6 h-6 ml-6 sm:mx-1"
+              className="w-6 h-6 m-4 sm:mx-1"
               whileTap={{ scale: 0.9 }}
             >
               <InstagramIcon />
             </motion.a>
+        </div>
           </div>
         </div>
       </div>
+      <div className=" flex flex-wrap w-full">
       <Footer />
+      </div>
+      
     </section>
   );
 }
