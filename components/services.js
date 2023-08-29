@@ -13,8 +13,8 @@ export default function Services() {
       />
       <hr className=" w-3/4 border border-[#F05F0A] mx-auto mb-4"/>
       <div className=" flex flex-row sm:flex-row justify-around sm:gap-2 mt-6">
-        <Card head={``} service={`Charges`} image={carwash} />
-        <Card head={``} service={`Charges`} image={carpet} />
+        <Card head={``} service={`Charges`} image={carwash} className=" w-1/3" />
+        <Card head={``} service={`Charges`} image={carpet} className=" w-1/3" />
       </div>
     </section>
   );

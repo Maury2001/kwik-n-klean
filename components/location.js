@@ -6,19 +6,18 @@ import Footer from "./footer";
 
 export default function Location() {
   return (
-    <section className=" bg-cover bg-fixed h-[300px] flex flex-col justify-between custom-img mt-6">
-      <div className=" flex justify-end sm:justify-center w-full h-[300px]   ">
+    <section className="flex flex-col justify-between mt-6 bg-[#3CAEF7] text-white">
+      <div className=" flex justify-end sm:justify-center w-full  ">
         <div className="w-1/2 sm:w-full flex flex-col justify-center">
           <div className=" w-full flex justify-center">
             <div className=" w-1/2 sm:w-full h-1/2 p-4 m-4 mt-6 grid justify-center items-center text-center  border shadow-lg">
-              <p>
-                We Are Located
-                <span className=" font-medium text-blue-500">
+              <p>We Are Located 
+                <span className=" font-medium text-[#F05F0A]">
                   
                   Opposite Kahuho Road Academy ... On your Way To kabiria
                 </span>
               </p>
-              <div className=" flex flex-row justify-center items-center backdrop-blur-sm">
+              <div className=" flex flex-row justify-center items-center backdrop-blur-xl">
                 <motion.a
                   href="https://goo.gl/maps/bhN8UcGzohgcN8Sp8"
                   target={"_blank"}
@@ -31,7 +30,7 @@ export default function Location() {
               </div>
             </div>
           </div>
-          <div className=" flex flex-wrap justify-center p-4 m-6 gap-4">
+          <div className=" flex flex-wrap justify-center p-4 m-6 gap-4 backdrop-blur-xl rounded-2xl">
             <motion.a
               href="/"
               target={"_blank"}

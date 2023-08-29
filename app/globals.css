@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-img{
+  background-image: url('/kwik-n-k/public/images/patt.jpg');
+  height: 60vh;
+  width: 100vw;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
