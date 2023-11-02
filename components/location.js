@@ -7,10 +7,16 @@ import Footer from "./footer";
 export default function Location() {
   return (
     <section className="flex flex-col justify-evenly mt-6 bg-[#3CAEF7] text-white">
+      <div className=" flex justify-start ">
+            <h2 className=" font-semibold text-lg">Kwik-n-Klean</h2>
+            </div>
       <div className=" flex justify-center sm:justify-center w-full  ">
         <div className="w-1/2 sm:w-full flex flex-col justify-center">
           <div className=" w-full flex justify-center">
+           
+          
             <div className=" w-1/2 sm:w-full h-1/2 p-4 m-4 mt-6 grid justify-center items-center text-center  border shadow-lg">
+              
               <p>We Are Located 
                 <span className=" font-medium text-[#F05F0A]">
                   
